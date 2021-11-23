@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION verificaIdade(IN idade)
+CREATE OR REPLACE FUNCTION verificaIdade(IN idade integer)
 RETURNS char(20) AS
 $$
 BEGIN
