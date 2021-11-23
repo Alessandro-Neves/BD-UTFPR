@@ -39,6 +39,7 @@ revoke whiters from alessandro;
 grant readers to alessandro;
 revoke readers from alessandro;
 grant managers to alessandro;
+revoke manager from alessandro;
 
 insert into products(code, description) values(101, 'lampada');
 insert into products(code, description) values(102, 'tênis');
