@@ -60,5 +60,26 @@ create view tela1 as
 
 
 create role translater;
-grant select,update on tela1 to translater;
-grant translater to alessandro;
+grant select,update on tela1 to translaters;
+grant translaters to alessandro;
+revoke translaters from alessandro;
+
+
+
+revoke all privileges on products from readers;
+revoke all privileges on products from whiters;
+revoke all privileges on products from managers;
+
+revoke all privileges on tela1 from translaters;
+
+
+drop role readers;
+drop role whiters;
+drop role mangers;
+drop role translaters;
+
+drop table  if exists products cascade;
+drop user if exists alessandro;
+
+-- \c postgres
+drop database if exists whitepapers;
