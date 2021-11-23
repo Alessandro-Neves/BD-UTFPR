@@ -81,5 +81,5 @@ drop role translaters;
 drop table  if exists products cascade;
 drop user if exists alessandro;
 
--- \c postgres
+-- \c postgres 
 drop database if exists whitepapers;
